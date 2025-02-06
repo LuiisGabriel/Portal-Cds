@@ -5,8 +5,9 @@ import Navbar from '../../components/navbar/Navbar';
 const LandingPage = () => {
     return(
         
-         <>   
-<Navbar/>
+        <>  
+         <h1>Página inicial</h1> 
+         <Navbar/>
         </>
         
     )
