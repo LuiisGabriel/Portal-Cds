@@ -2,15 +2,15 @@ import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 
 
-const LandingPage = () => {
+const SobreNos = () => {
     return(
         
         <>  
          <Navbar/>
-         <h1>Página Inicial</h1>
+         <h1>Sobre Nós</h1>
         </>
         
     )
 }
 
-export default LandingPage
+export default SobreNos
