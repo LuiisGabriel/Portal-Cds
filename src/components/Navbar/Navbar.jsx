@@ -7,6 +7,7 @@ const navigation = [
   { name: 'Treinamentos', href: '/Treinamentos'},
   { name: 'Avaliações', href: '/Avaliacoes'},
   { name: 'Sobre Nós', href: '/SobreNos'},
+  
 ]
 
 function classNames(...classes) {
@@ -22,14 +23,18 @@ export default function Navbar() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
+              <a href='/'>
               <img
                 alt="CDS Sistemas"
                 src={Logo} 
+                
                 className="h-12 w-auto"
               />
+              
+              </a>
             </div>
             <div className="hidden sm:ml-6 sm:block">
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 ">
                 {navigation.map((item) => (
                   <a
                     key={item.name}
