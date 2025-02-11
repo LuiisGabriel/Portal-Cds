@@ -3,6 +3,7 @@ import Navbar from '../../../components/Navbar/Navbar';
 import { useQuery } from "@apollo/client";
 
 import INFO_PERSON from "../../../querys/Querys";
+import YouTube from 'react-youtube';
 
 const RetaguardaWeb = () => {
 
@@ -24,7 +25,7 @@ const RetaguardaWeb = () => {
 
     return(
         
-        <>  
+    <>  
       <nav className="sticky top-0 z-50"><Navbar/></nav>
          
       <div className="bg-white">
@@ -44,7 +45,16 @@ const RetaguardaWeb = () => {
         </div>
       </div>
     </div>
-        </>
+
+    <div className='p-2'>
+    <YouTube videoId='VnjdikpgR0E?si=HmHR4TeW3SUyYQKy'/>
+    </div>
+
+    <div className='p-2'>
+    <YouTube videoId='1eNSWZ4x2ZU?si=nF2b38LFVZ-w4Ytw'/>
+    </div>
+
+  </>
         
     )
 }
