@@ -5,6 +5,11 @@ import Treinamentos from "./pages/Treinamentos/Treinamentos"
 import Avaliacoes from "./pages/Avaliacoes/Avaliacoes";
 import SobreNos from "./pages/SobreNos/SobreNos";
 import Perfil from "./pages/Perfil/Perfil";
+import FrenteDeLojaDesktop from "./pages/Treinamentos/modulos/FrenteDeLojaDesktop";
+import FrenteDeLojaWeb from "./pages/Treinamentos/modulos/FrenteDeLojaWeb";
+import RetaguardaDesktop from "./pages/Treinamentos/modulos/RetaguardaDesktop";
+import RetaguardaWeb from "./pages/Treinamentos/modulos/RetaguardaWeb";
+
 
 const AppRoutes = () =>{
 
@@ -15,6 +20,10 @@ const AppRoutes = () =>{
         <Route path= '/Avaliacoes' element = {<Avaliacoes/>}/>
         <Route path= '/SobreNos' element = {<SobreNos/>}/>
         <Route path= '/Perfil' element = {<Perfil/>}/>
+        <Route path= '/FrenteDeLojaDesktop' element = {<FrenteDeLojaDesktop/>}/>
+        <Route path= '/FrenteDeLojaWeb' element = {<FrenteDeLojaWeb/>}/>
+        <Route path= '/RetaguardaDesktop' element = {<RetaguardaDesktop/>}/>
+        <Route path= '/RetaguardaWeb' element = {<RetaguardaWeb/>}/>
         </Routes>
         
     )

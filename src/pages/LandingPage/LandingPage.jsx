@@ -6,7 +6,7 @@ const LandingPage = () => {
     return(
         
         <>  
-         <Navbar/>
+         <nav className="sticky top-0 z-50"><Navbar/></nav>
          <h1>Página Inicial</h1>
         </>
         

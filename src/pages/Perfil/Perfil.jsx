@@ -6,7 +6,7 @@ const Perfil = () => {
     return(
         
         <>  
-         <Navbar/>
+         <nav className="sticky top-0 z-50"><Navbar/></nav>
          <h1>Perfil</h1>
         </>
         

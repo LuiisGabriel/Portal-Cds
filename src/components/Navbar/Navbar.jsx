@@ -1,6 +1,6 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
-import Logo from './images/CDSLOGO.svg'
+import Logo from '../../images/LOGO.png'
 
 const navigation = [
   { name: 'Página inicial', href: '/'},
@@ -17,7 +17,7 @@ function classNames(...classes) {
 export default function Navbar() {
   return (
     <Disclosure as="nav" className="bg-gray-800">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div className=" mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">    
           </div>
@@ -28,7 +28,7 @@ export default function Navbar() {
                 alt="CDS Sistemas"
                 src={Logo} 
                 
-                className="h-12 w-auto"
+                className="h-10 w-auto"
               />
               
               </a>
@@ -61,7 +61,7 @@ export default function Navbar() {
                   <span className="sr-only">Open user menu</span>
                   <img
                     alt="imagem de perfil"
-                    src="IMAGEM DE PERFIL AQUI"
+                    src={Logo}
                     className="size-8 rounded-full"
                   />
                 </MenuButton>
