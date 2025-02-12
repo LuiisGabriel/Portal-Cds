@@ -7,6 +7,7 @@ const navigation = [
   { name: 'Treinamentos', href: '/Treinamentos'},
   { name: 'Avaliações', href: '/Avaliacoes'},
   { name: 'Sobre Nós', href: '/SobreNos'},
+  { name: 'Novo Vídeo', href: '/NovoVideo'},
   
 ]
 
@@ -34,7 +35,7 @@ export default function Navbar() {
               </a>
             </div>
             <div className="hidden sm:ml-6 sm:block">
-              <div className="flex space-x-4 ">
+              <div className="flex items-center space-x-4">
                 {navigation.map((item) => (
                   <a
                     key={item.name}
@@ -58,7 +59,6 @@ export default function Navbar() {
               <div>
                 <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden">
                   <span className="absolute -inset-1.5" />
-                  <span className="sr-only">Open user menu</span>
                   <img
                     alt="imagem de perfil"
                     src={Logo}

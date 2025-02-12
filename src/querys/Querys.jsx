@@ -1,17 +1,16 @@
 import { gql } from "@apollo/client";
 
-const INFO_PERSON = gql`
-  query {
-    characters {
-      results {
-        name
-        species
-        gender
-        image
-      }
-    }
+const getVideos = gql`
+query getVideos {
+  videos {
+    titulo
+    slug
+    videoId
   }
+}
 `;
 
 
-export default INFO_PERSON;
+
+
+export default getVideos;

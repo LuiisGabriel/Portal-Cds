@@ -1,22 +1,14 @@
 import React from 'react';
 import Navbar from '../../../components/Navbar/Navbar';
 import { useQuery } from "@apollo/client";
-
-import INFO_PERSON from "../../../querys/Querys";
-import YouTube from 'react-youtube';
+import getTreinamentos from '../../../querys/Querys2';
 
 const RetaguardaWeb = () => {
 
-      const { loading, error, data } = useQuery(INFO_PERSON);
+      const { loading, error, data } = useQuery(getTreinamentos);
           
       if (loading) {
-        return <div className="lg: mx-w-2xs">
-           <div className="bg-gray-700">
-          <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-3xs lg:px-8">Loading...</div>
-        </div>
-        </div>;
-       
-        
+        return  <div>Loading...</div>
       }
     
       if (error) {
@@ -27,33 +19,24 @@ const RetaguardaWeb = () => {
         
     <>  
       <nav className="sticky top-0 z-50"><Navbar/></nav>
-         
       <div className="bg-white">
-      <div className="mx-left max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-3xs lg:px-8">
-        <h2 className="sr-only">RetaguardaWeb</h2>
-
-        <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-4 xl:gap-x-8">
-        {data.characters.results.map((person) => (
-            <a key={person.name} className="group">
+      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+        <h2 className="sr-only">Treinamentos</h2>
+        <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          {data.treinamentos.map((treinamento) => (
+            <a className="group">
               <img
-                src={person.image}
-                className="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8"
+                alt={treinamento.alt}
+                src={treinamento.imagem.url}
+                className="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:scale-102 group-hover:opacity-75 xl:aspect-7/8"
               />
-              <h3 className="mt-4 text-sm text-gray-700">{person.name}</h3>
-            </a>
+              <h3 className="mt-4 text-sm text-gray-700">{treinamento.titulo}</h3>
+             </a>
+            
           ))}
         </div>
       </div>
     </div>
-
-    <div className='p-2'>
-    <YouTube videoId='VnjdikpgR0E?si=HmHR4TeW3SUyYQKy'/>
-    </div>
-
-    <div className='p-2'>
-    <YouTube videoId='1eNSWZ4x2ZU?si=nF2b38LFVZ-w4Ytw'/>
-    </div>
-
   </>
         
     )
