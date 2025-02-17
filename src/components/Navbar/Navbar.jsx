@@ -28,7 +28,6 @@ export default function Navbar() {
               <img
                 alt="CDS Sistemas"
                 src={Logo} 
-                
                 className="h-10 w-auto"
               />
               
