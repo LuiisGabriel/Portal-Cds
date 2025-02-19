@@ -3,6 +3,7 @@ import Navbar from '../../../components/Navbar/Navbar';
 import { useQuery } from "@apollo/client";
 import getTreinamentos from '../../../querys/Querys2';
 
+
 const RetaguardaWeb = () => {
 
       const { loading, error, data } = useQuery(getTreinamentos);
