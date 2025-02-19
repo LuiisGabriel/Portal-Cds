@@ -1,11 +1,11 @@
 import Navbar from "../../components/Navbar/Navbar";
 import { useMutation} from "@apollo/client";
 import { React,useState } from "react";
-import createNewVideo from "../../mutations/Mutations";
+import createNewVideo from "../../mutations/createNewVideo";
+import publishNewVideo from "../../mutations/PublishVideo";
 
 
 const NovoVideo = () => {
-
 
   const [formData, setFormData] = useState({
     titulo: '',
@@ -14,12 +14,13 @@ const NovoVideo = () => {
   });
 
   const [createVideo] = useMutation(createNewVideo);
+  const [publishVideo] = useMutation(publishNewVideo);
 
   const handleInputChange = (e) => {
-    const { id, value } = e.target;
+    const { name, value } = e.target;
     setFormData((prevFormData) => ({
       ...prevFormData,
-      [id]: value,
+      [name]: value,
     }));
   };
 
@@ -30,7 +31,9 @@ const NovoVideo = () => {
 
     createVideo({ variables: {titulo, slug, videoId } })
 
+
       .then((response) => {
+        publishVideo({variables: {slug}})
         alert('Novo vídeo cadastrado com sucesso!!!')
       })
       .catch((error) => {
