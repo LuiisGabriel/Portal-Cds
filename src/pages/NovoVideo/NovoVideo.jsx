@@ -13,8 +13,8 @@ const NovoVideo = () => {
     videoId: '',
   });
 
-  const [createVideo] = useMutation(createNewVideo);
-  const [publishVideo] = useMutation(publishNewVideo);
+  const [createVideo,createError] = useMutation(createNewVideo);
+  const [publishVideo,publishError] = useMutation(publishNewVideo);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
