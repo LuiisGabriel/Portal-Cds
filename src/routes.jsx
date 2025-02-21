@@ -10,6 +10,8 @@ import FrenteDeLojaWeb from "./pages/Treinamentos/modulos/FrenteDeLojaWeb";
 import RetaguardaDesktop from "./pages/Treinamentos/modulos/RetaguardaDesktop";
 import RetaguardaWeb from "./pages/Treinamentos/modulos/RetaguardaWeb";
 import NovoVideo from "./pages/NovoVideo/NovoVideo";
+import Teste from "./pages/teste";
+
 
 
 const AppRoutes = () =>{
@@ -26,6 +28,7 @@ const AppRoutes = () =>{
         <Route path= '/RetaguardaDesktop' element = {<RetaguardaDesktop/>}/>
         <Route path= '/RetaguardaWeb' element = {<RetaguardaWeb/>}/>
         <Route path= '/NovoVideo' element = {<NovoVideo/>}/>
+        <Route path= '/Teste' element = {<Teste/>}/>
         </Routes>
         
     )

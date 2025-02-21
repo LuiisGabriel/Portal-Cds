@@ -8,6 +8,7 @@ const navigation = [
   { name: 'Avaliações', href: '/Avaliacoes'},
   { name: 'Sobre Nós', href: '/SobreNos'},
   { name: 'Novo Vídeo', href: '/NovoVideo'},
+ 
   
 ]
 

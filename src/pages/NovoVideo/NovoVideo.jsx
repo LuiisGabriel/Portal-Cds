@@ -4,7 +4,6 @@ import { React,useState } from "react";
 import createNewVideo from "../../mutations/createNewVideo";
 import publishNewVideo from "../../mutations/PublishVideo";
 
-
 const NovoVideo = () => {
 
   const [formData, setFormData] = useState({
@@ -13,8 +12,8 @@ const NovoVideo = () => {
     videoId: '',
   });
 
-  const [createVideo,createError] = useMutation(createNewVideo);
-  const [publishVideo,publishError] = useMutation(publishNewVideo);
+  const [createVideo] = useMutation(createNewVideo);
+  const [publishVideo] = useMutation(publishNewVideo);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -73,7 +72,7 @@ const NovoVideo = () => {
                   </label>
                 </div>
                 <div className="mt-2">
-                  <input
+                <input
                      id="slug"
                      type="text" 
                      name="slug" 
