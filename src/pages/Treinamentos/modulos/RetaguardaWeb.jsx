@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../../../components/Navbar/Navbar';
 import { useQuery } from "@apollo/client";
-import getTreinamentos from '../../../querys/Querys2';
+import getTreinamentos from '../../../querys/GetTreinamentos';
 
 
 const RetaguardaWeb = () => {

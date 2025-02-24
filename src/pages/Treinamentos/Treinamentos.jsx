@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import YouTube from 'react-youtube';
+import BemVindoTreinamentos from "../../components/BemVindoTreinamentos/BemVindoTreinamentos";
 
 
 const treinamentos = [
@@ -45,7 +46,7 @@ const Treinamentos = () => {
      
         <>
       <nav className="sticky top-0 z-50"><Navbar/></nav>
-
+    <div><BemVindoTreinamentos/></div>
       <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <h2 className="sr-only">Treinamentos</h2>

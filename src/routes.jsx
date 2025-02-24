@@ -11,14 +11,17 @@ import RetaguardaDesktop from "./pages/Treinamentos/modulos/RetaguardaDesktop";
 import RetaguardaWeb from "./pages/Treinamentos/modulos/RetaguardaWeb";
 import NovoVideo from "./pages/NovoVideo/NovoVideo";
 import Teste from "./pages/teste";
-
+import Login from "./pages/Login/Login";
+import Cadastro from "./pages/Cadastro/Cadastro"
 
 
 const AppRoutes = () =>{
 
     return (
         <Routes>
-        <Route path= '/' element = {<LandingPage/>}/>
+        <Route path= '/' element = {<Login/>}/>
+        <Route path= '/Cadastro' element = {<Cadastro/>}/>
+        <Route path= '/LandingPage' element = {<LandingPage/>}/>
         <Route path= '/Treinamentos' element = {<Treinamentos/>}/>
         <Route path= '/Avaliacoes' element = {<Avaliacoes/>}/>
         <Route path= '/SobreNos' element = {<SobreNos/>}/>

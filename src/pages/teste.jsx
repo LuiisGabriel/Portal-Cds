@@ -1,6 +1,6 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
-import getVideos from "../querys/Querys";
+import getVideos from "../querys/GetVideos";
 
 const Teste = () => {
 

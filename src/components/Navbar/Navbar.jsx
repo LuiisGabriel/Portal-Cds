@@ -1,9 +1,10 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import Logo from '../../images/LOGO.png'
+import Perfil from './images/perfil.jpg'
 
 const navigation = [
-  { name: 'Página inicial', href: '/'},
+  { name: 'Página inicial', href: '/LandingPage'},
   { name: 'Treinamentos', href: '/Treinamentos'},
   { name: 'Avaliações', href: '/Avaliacoes'},
   { name: 'Sobre Nós', href: '/SobreNos'},
@@ -61,7 +62,7 @@ export default function Navbar() {
                   <span className="absolute -inset-1.5" />
                   <img
                     alt="imagem de perfil"
-                    src={Logo}
+                    src={Perfil}
                     className="size-8 rounded-full"
                   />
                 </MenuButton>

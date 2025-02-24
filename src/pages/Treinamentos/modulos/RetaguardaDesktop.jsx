@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../../../components/Navbar/Navbar';
 import { useQuery } from "@apollo/client";
 import YouTube from 'react-youtube';
-import getVideos from "../../../querys/Querys";
+import getVideos from "../../../querys/GetVideos";
 
 
 const RetaguardaDesktop = () => {

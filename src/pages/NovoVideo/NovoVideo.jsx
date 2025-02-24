@@ -110,6 +110,11 @@ const NovoVideo = () => {
                 </button>
               </div>
             </form>
+            <div>
+            <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
+              Start a 14 day free trial
+            </a>
+            </div>
           </div>
         </div>
       </>
