@@ -1,11 +1,10 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
-import getVideos from "../querys/GetVideos";
-import getTreinamentos from "../querys/GetTreinamentos";
+import getModulos from "../querys/GetModulos";
 
 const Teste = () => {
 
-    const { loading, error, data } = useQuery(getTreinamentos);
+    const { loading, error, data } = useQuery(getModulos);
           
     if (loading) {
       return ( 
@@ -25,14 +24,19 @@ const Teste = () => {
 return(
     <>
     <from>
-        <select>
-
-            
-{data.treinamentos.map((video) => (
-    <option value={video.titulo}>{video.titulo}</option>
-    
-  ))}
-
+    <label htmlFor="modulo" className="block text-sm/6 font-medium text-gray-900">
+                    Modulo
+                  </label>
+                
+                
+                <select
+                     id="modulo"
+                     type="text" 
+                     name="modulo" 
+                     required
+                    className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-bg-gray-800 sm:text-sm/6"
+                >        
+{data.modulos.map((modulo) => (<option>{modulo.nome}</option>))}
         </select>
     </from>
     </>

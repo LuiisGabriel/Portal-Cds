@@ -2,7 +2,7 @@ import { gql } from "@apollo/client";
 
 const getVideosFrenteDeLojaDesktopRelatorios = gql`
 query getVideosFrenteDeLojaDesktopRelatorios {
-  videos(where: {modulo: "FrenteDeLojaDesktop", AND: {subModulo: "Relatorios"}}) {
+  videos(where: {modulo: "Frente De Loja Desktop", AND: {subModulo: "Relatorios"}}) {
     titulo
     modulo
     subModulo
