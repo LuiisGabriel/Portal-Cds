@@ -13,6 +13,18 @@ import NovoVideo from "./pages/NovoVideo/NovoVideo";
 import Teste from "./pages/teste";
 import Login from "./pages/Login/Login";
 import Cadastro from "./pages/Cadastro/Cadastro"
+import RetaguardaWebCadastros from "./pages/Treinamentos/subModulos/RetaguardaWeb/RetaguardaWebCadastros";
+import RetaguardaWebFinanceiro from "./pages/Treinamentos/subModulos/RetaguardaWeb/RetaguardaWebFinanceiro";
+import RetaguardaWebOperacoes from "./pages/Treinamentos/subModulos/RetaguardaWeb/RetaguardaWebOperacoes";
+import RetaguardaDesktopCadastros from "./pages/Treinamentos/subModulos/RetaguardaDesktop/RetaguardaDesktopCadastros";
+import RetaguardaDesktopOperacoes from "./pages/Treinamentos/subModulos/RetaguardaDesktop/RetaguardaDesktopOperacoes";
+import RetaguardaDesktopFinanceiro from "./pages/Treinamentos/subModulos/RetaguardaDesktop/RetaguardaDesktopFinanceiro";
+import RetaguardaDesktopFerramentas from "./pages/Treinamentos/subModulos/RetaguardaDesktop/RetaguardaDesktopFerramentas";
+import FrenteDeLojaWebOperacoes from "./pages/Treinamentos/subModulos/FrenteDeLojaWeb/FrenteDeLojaWebOperacoes";
+import FrenteDeLojaWebRelatorios from "./pages/Treinamentos/subModulos/FrenteDeLojaWeb/FrenteDeLojaWebRelatorios";
+import FrenteDeLojaDesktopFerramentas from "./pages/Treinamentos/subModulos/FrenteDeLojaDesktop/FrenteDeLojaDesktopFerramentas";
+import FrenteDeLojaDesktopRelatorios from "./pages/Treinamentos/subModulos/FrenteDeLojaDesktop/FrenteDeLojaDesktopRelatorios";
+import FrenteDeLojaDesktopOperacoes from "./pages/Treinamentos/subModulos/FrenteDeLojaDesktop/FrenteDeLojaDesktopOperacoes";
 
 
 const AppRoutes = () =>{
@@ -32,6 +44,18 @@ const AppRoutes = () =>{
         <Route path= '/RetaguardaWeb' element = {<RetaguardaWeb/>}/>
         <Route path= '/NovoVideo' element = {<NovoVideo/>}/>
         <Route path= '/Teste' element = {<Teste/>}/>
+        <Route path= '/RetaguardaWeb/Cadastros' element = {<RetaguardaWebCadastros/>}/>
+        <Route path= '/RetaguardaWeb/Financeiro' element = {<RetaguardaWebFinanceiro/>}/>
+        <Route path= '/RetaguardaWeb/Operacoes' element = {<RetaguardaWebOperacoes/>}/>
+        <Route path= '/RetaguardaDesktop/Cadastros' element = {<RetaguardaDesktopCadastros/>}/>
+        <Route path= '/RetaguardaDesktop/Operacoes' element = {<RetaguardaDesktopOperacoes/>}/>
+        <Route path= '/RetaguardaDesktop/Financeiro' element = {<RetaguardaDesktopFinanceiro/>}/>
+        <Route path= '/RetaguardaDesktop/Ferramentas' element = {<RetaguardaDesktopFerramentas/>}/>
+        <Route path= '/FrenteDeLojaWeb/Operacoes' element = {<FrenteDeLojaWebOperacoes/>}/>
+        <Route path= '/FrenteDeLojaWeb/Relatorios' element = {<FrenteDeLojaWebRelatorios/>}/>
+        <Route path= '/FrenteDeLojaDesktop/Ferramentas' element = {<FrenteDeLojaDesktopFerramentas/>}/>
+        <Route path= '/FrenteDeLojaDesktop/Relatorios' element = {<FrenteDeLojaDesktopRelatorios/>}/>
+        <Route path= '/FrenteDeLojaDesktop/Operacoes' element = {<FrenteDeLojaDesktopOperacoes/>}/>
         </Routes>
         
     )

@@ -7,9 +7,9 @@ import { useQuery } from "@apollo/client";
 
 const Login = () => {
 
-  const {data} = useQuery(getUsuarioLogin);
 
   const [formData, setFormData] = useState({
+    nome: '',
     email: '',
     senha: '',
   });
@@ -27,8 +27,7 @@ const Login = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-          navigate('/LandingPage');
-   
+          navigate('/LandingPage');  
     }
 
     return (

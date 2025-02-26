@@ -2,7 +2,7 @@ import { gql } from "@apollo/client";
 
 const getUsuarioLogin = gql`
 
-query getUsuarioLogin($email: String!){
+query getUsuarioLogin{
     usuario(where: {email: $email}) {
       nome
       email

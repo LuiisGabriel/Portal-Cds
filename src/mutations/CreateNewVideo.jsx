@@ -2,10 +2,11 @@ import { gql } from "@apollo/client";
 
 const createNewVideo = gql`
 
-mutation createVideo($titulo:String!, $slug:String!, $videoId:String!){
-  createVideo(data: {titulo: $titulo, slug: $slug, videoId: $videoId}){
+mutation createVideo($titulo:String!, $modulo:String!, $subModulo: String!, $videoId:String!){
+  createVideo(data: {titulo: $titulo, modulo: $modulo, subModulo: $subModulo, videoId: $videoId}){
     titulo
-    slug
+    modulo
+    subModulo
     videoId
   }
 }

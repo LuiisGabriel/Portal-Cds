@@ -2,9 +2,9 @@ import { gql } from "@apollo/client";
 
 const publishNewVideo = gql`
 
-mutation publishVideo($slug: String!) {
-  publishVideo(where: {slug: $slug}, to: PUBLISHED){
-    slug
+mutation publishVideo($videoId: String!) {
+  publishVideo(where: {videoId: $videoId}, to: PUBLISHED){
+    videoId
   }
 }
 `;
