@@ -24,8 +24,6 @@ const FrenteDeLojaDesktopFerramentas = () => {
     return alert('Ocorreu um problema ao carregar os vídeos!!!');
   }
 
-
-
   return (
 
     <>
